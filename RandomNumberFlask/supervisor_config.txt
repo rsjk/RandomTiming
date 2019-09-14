@@ -1,0 +1,8 @@
+[program:random_number_generator]
+directory=/home/[Your Username]/RandomNumberGen-Servlets/RandomNumberFlask
+command=/home/[Your Username]/RandomNumberGen-Servlets/RandomNumberFlask/venv/bin/gunicorn -w [Number of Workers] random_number_generator:app
+user=[Your Username]
+autostart=true
+autorestart=true
+stopasgroup=true
+killasgroup=true
