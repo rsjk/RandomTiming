@@ -1,4 +1,24 @@
-https://github.com/Andy-Vu-Viz/RandomNumberGen-Servlets
+# Random Number Generator GCP Project
+This repository contains the 4 different implementations of the Random Number Generator.
+* java-appengine-randomnumbergenerator-master is the Java App Engine Implementation. 
+* RandomNumberTomcat-master is the Java Virtual Machine implementation.
+* RandomNumberPythonAE is the Python App Engine Implementation. 
+* RandomNumberFlask is the Python Virtual Machine implementation.
+
+## Our Deployments
+Our deployments can be found at the following URLs:
+* Java App Engine
+* Java Virtual Machine http://35.209.25.119/Servlets/RandomNumberGen
+* Python App Engine http://python-rand-ae.appspot.com/
+* Python Virtual Machine http://35.193.182.65/
+
+## Testing
+The testing script is testscript.py.
+To run the script, execute "python testscript.py [URL of Generator]".
+We ran the script for each generator 10 times, generating 1000 numbers each time. The script checks that at least 750 numbers are unique. Our test results are in the TestResults directory. Each test was successful.
+
+## Deployment Instructions
+Instructions to create your own deployments of the apps.
 ### Java App Engine
 1. Download the code for the Java App Engine deployment
 2. Create a new project in Google Cloud Platform
@@ -11,7 +31,6 @@ https://github.com/Andy-Vu-Viz/RandomNumberGen-Servlets
 9. Copy the downloaded "src" folder into the directory replacing the old one you removed
 10. Execute command "mvn appengine:deploy"
 11. Navigate to the link shown on the dashboard page of App Engine to receive a generated number
-
 
 ### Java Virtual Machine
 1. Download the code for the Java Tomcat/Virtual Machine deployment or the WAR file named "Servlets.war"
@@ -32,7 +51,6 @@ https://github.com/Andy-Vu-Viz/RandomNumberGen-Servlets
 16. Switch "Emphemral" to "Static" and reserve an IP with any name you find appropriate
 17. To access the random number generator navigate to "[The IP Address of the Server]/Servlets/RandomNumberGen"
 
-
 ### Python App Engine
 1. Create a new project in Google Cloud Platform
 2. Navigate to the App Engine page and click on "Create Application"
@@ -41,11 +59,11 @@ https://github.com/Andy-Vu-Viz/RandomNumberGen-Servlets
 5. Open the Cloud Shell
 6. Clone this repository with the command "git clone https://github.com/Andy-Vu-Viz/RandomNumberGen-Servlets/"
 7. Switch to the PythonRandomNumberAE directory with "cd RandomNumberGen-Servlets/PythonRandomNumberAE/"
-Install pip with "sudo apt install python3-pip"
-8. Install project dependencies with "pip install -r requirements.txt"
-9. Create the app with "gcloud app create"
-10. Deploy the app with "gcloud app deploy app.yaml --[Project ID]"
-11. The default URL of your app is [Project ID].appspot.com. Or you can use the "gcloud app browse" command to open it.
+8. Install pip with "sudo apt install python3-pip"
+9. Install project dependencies with "pip install -r requirements.txt"
+10. Create the app with "gcloud app create"
+11. Deploy the app with "gcloud app deploy app.yaml --[Project ID]"
+12. The default URL of your app is [Project ID].appspot.com. Or you can use the "gcloud app browse" command to open it.
 
 ### Python Virtual Machine
 1. Create a new project in Google Cloud Platform
@@ -68,32 +86,14 @@ Install pip with "sudo apt install python3-pip"
 13. Update nginx config file. Do the following: 
 * sudo rm /etc/nginx/sites-enabled/default
 * sudo nano /etc/nginx/sites-enabled/random_number_generator
-* Inside the file, type:
-server {
-  listen 80;
-  server_name = [The IP Address of the Server];
-  
-  location / {
-    proxy_pass http://localhost:8000;
-    include /etc/nginx/proxy_params;
-    proxy_redirect off;
-  }
-}
+* Copy the contents of RandomNumberFlask/nginx_config.txt into the file. Change [The IP Address of the Server] to your IP.
 14. Restart nginx server with "sudo systemctl restart nginx"
 15. Find out the number of workers for gunicorn with (2 * number of cores) + 1. Execute "nproc --all" to find number of cores.
 16. Install supervisor with "sudo apt install supervisor"
 17. Set up supervisor with "sudo nano /etc/supervisor/conf.d/random_number_generator.conf"
-* Inside the file type:
-[program:random_number_generator]
-directory=/home/[Your Username]/RandomNumberGen-Servlets/RandomNumberFlask
-command=/home/[Your Username]/RandomNumberGen-Servlets/RandomNumberFlask/venv/bin/gunicorn -w [Number of Workers] random_number_generator:app
-user=[Your Username]
-autostart=true
-autorestart=true
-stopasgroup=true
-killasgroup=true
-18. Restart supervisor with "sudo supervisorctl reload"
-19. Setup a static IP for your virtual machine by going to the VPC Network page on GCP
-20. Under the "External IP addresses" find the IP address being used by the VM instance containing your Tomcat deployment
-21. Switch "Emphemral" to "Static" and reserve an IP with any name you find appropriate
-22. To access the random number generator navigate to "http://[The IP Address of the Server]"
+18. Copy the contents of RandomNumberFlask/supervisor_config.txt into the file. Change [Your Username] and [Number of Workers].
+19. Restart supervisor with "sudo supervisorctl reload"
+20. Setup a static IP for your virtual machine by going to the VPC Network page on GCP
+21. Under the "External IP addresses" find the IP address being used by the VM instance containing your Tomcat deployment
+22. Switch "Emphemral" to "Static" and reserve an IP with any name you find appropriate
+23. To access the random number generator navigate to "http://[The IP Address of the Server]"
