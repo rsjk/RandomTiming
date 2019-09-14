@@ -13,9 +13,7 @@ Our deployments can be found at the following URLs:
 * Python Virtual Machine http://35.193.182.65/
 
 ## Testing
-The testing script is testscript.py.
-To run the script, execute "python testscript.py [URL of Generator]".
-We ran the script for each generator 10 times, generating 1000 numbers each time. The script checks that at least 750 numbers are unique. Our test results are in the TestResults directory. Each test was successful.
+The testing script is testscript.py. The script accepts the URL of the generator to test as an argument. To run the script, execute "python testscript.py [URL of Generator]". We ran the script for each generator 10 times, generating 1000 numbers each time. The script checks that at least 750 numbers are unique. Our test results are in the TestResults directory. Each test was successful.
 
 ## Deployment Instructions
 Instructions to create your own deployments of the apps.
