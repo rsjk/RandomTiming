@@ -34,7 +34,17 @@ https://github.com/Andy-Vu-Viz/RandomNumberGen-Servlets
 
 
 ### Python App Engine
-1. 
+1. Create a new project in Google Cloud Platform
+2. Navigate to the App Engine page and click on "Create Application"
+3. Select an appropriate server location
+4. Select "Python" as the language and select "Standard" as the environment
+5. Open the Cloud Shell
+6. Clown this repository with the command "git clone https://github.com/Andy-Vu-Viz/RandomNumberGen-Servlets/"
+7. Switch to the PythonRandomNumberAE directory with "cd PythonRandomNumberAE"
+8. Install project dependencies with "pip install -r requirements.txt"
+9. Create the app with "gcloud app create"
+10. Deploy the app with "gcloud app deploy app.yaml --[YOUR PROJECT ID]"
+11. The default URL of your app is [YOUR PROJECT ID].appspot.com. Or you can use the "gcloud app browse" command to open it.
 
 ### Python Virtual Machine
 1. 
