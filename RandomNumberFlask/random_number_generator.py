@@ -6,11 +6,6 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def home():
-    return 'Home'
-
-
-@app.route('/RandomNumberGenerator')
 def random_number_generator():
     # generate a number between 1 and 1 million
     num = random.randint(1, 1000000)
