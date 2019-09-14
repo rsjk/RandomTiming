@@ -47,4 +47,8 @@ https://github.com/Andy-Vu-Viz/RandomNumberGen-Servlets
 11. The default URL of your app is [YOUR PROJECT ID].appspot.com. Or you can use the "gcloud app browse" command to open it.
 
 ### Python Virtual Machine
-1. 
+1. Create a new project in Google Cloud Platform
+2. Navigate to the Compute Engine page and create a new VM instance with your preferred options
+3. Connect to the instance via SSH
+4. Execute the command "sudo apt update && sudo apt upgrade"
+5. 
