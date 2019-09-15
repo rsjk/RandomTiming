@@ -1,0 +1,32 @@
+Run 1:
+Test passed
+1000 unqiue numbers were retrieved
+Run 2:
+Test passed
+998 unqiue numbers were retrieved
+Run 3:
+Test passed
+1000 unqiue numbers were retrieved
+Run 4:
+Test passed
+999 unqiue numbers were retrieved
+Run 5:
+Test passed
+999 unqiue numbers were retrieved
+Run 6:
+Test passed
+1000 unqiue numbers were retrieved
+Run 7:
+Test passed
+1000 unqiue numbers were retrieved
+Run 8:
+Test passed
+998 unqiue numbers were retrieved
+Run 9:
+Test passed
+999 unqiue numbers were retrieved
+Run 10:
+Test passed
+1000 unqiue numbers were retrieved
+Total passes: 10
+Total fails: 0
