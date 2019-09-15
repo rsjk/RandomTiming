@@ -6,5 +6,5 @@ autostart=true
 autorestart=true
 stopasgroup=true
 killasgroup=true
-stderr_logfile=/var/log/flaskblog/flaskblog.err.log
-stdout_logfile=/var/log/flaskblog/flaskblog.out.log
+stderr_logfile=/var/log/random_number_generator/random_number_generator.err.log
+stdout_logfile=/var/log/random_number_generator/random_number_generator.out.log
