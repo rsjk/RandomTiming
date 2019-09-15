@@ -51,19 +51,16 @@ Instructions to create your own deployments of the apps.
 
 ### Python App Engine
 1. Create a new project in Google Cloud Platform
-2. Navigate to the App Engine page and click on "Create Application"
-3. Select an appropriate server location
-4. Select "Python" as the language and select "Standard" as the environment
-5. Open the Cloud Shell
-6. Clone this repository with the command "git clone https://github.com/Andy-Vu-Viz/RandomNumberGen-Servlets/"
-7. Switch to the PythonRandomNumberAE directory with "cd RandomNumberGen-Servlets/RandomNumberPythonAE"
-8. Install a virtual environment. Run the command "virtualenv --python python3 venv"
-9. Activate the virtual environment by running "source venv/bin/activate"
-10. Install project dependencies with "pip install -r requirements.txt"
-11. Run in the Flask development server with "python main.py"
-12. Create the app with "gcloud app create"
-13. Deploy the app with "gcloud app deploy app.yaml --project [Project ID]"
-14. The default URL of your app is [Project ID].appspot.com. Or you can use the "gcloud app browse" command to open it.
+2. Open the Cloud Shell
+3. Clone this repository with the command "git clone https://github.com/Andy-Vu-Viz/RandomNumberGen-Servlets/"
+4. Switch to the PythonRandomNumberAE directory with "cd RandomNumberGen-Servlets/RandomNumberPythonAE"
+5. Install a virtual environment. Run the command "virtualenv --python python3 venv"
+6. Activate the virtual environment by running "source venv/bin/activate"
+7. Install project dependencies with "pip install -r requirements.txt"
+8. Run in the Flask development server with "python main.py"
+9. Create the app with "gcloud app create"
+10. Deploy the app with "gcloud app deploy app.yaml --project [Project ID]"
+11. The default URL of your app is [Project ID].appspot.com. Or you can use the "gcloud app browse" command to open it.
 
 ### Python Virtual Machine
 1. Create a new project in Google Cloud Platform
