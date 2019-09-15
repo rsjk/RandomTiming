@@ -16,7 +16,7 @@ Our deployments can be found at the following URLs:
 The testing script is testscript.py. The script accepts the URL of the generator to test as an argument. To run the script, execute "python testscript.py [URL of Generator]". We ran the script for each generator 10 times, generating 1000 numbers each time. The script checks that at least 750 numbers are unique in each run. Our test results are in the TestResults directory. Each test was successful.
 
 ## Deployment Instructions
-Instructions to create your own deployments of the apps.
+Each section contains instructions to create your own deployments of the apps.
 ### Java App Engine
 1. Download the code for the Java App Engine deployment
 2. Create a new project in Google Cloud Platform
@@ -40,9 +40,9 @@ Instructions to create your own deployments of the apps.
 7. Scroll to the bottom of the page and click "Deploy"
 8. Wait for the deployment operation to finish
 9. You may follow the "Suggested next steps" if you choose to
-10. Using the source code for the servlet create a WAR file or the WAR file you downloaded from the repo.
+10. Using the source code for the servlet create a WAR file or the WAR file you downloaded from the repo
 11. Click on the "Visit the site" button
-12. On the webpage that just openned click on the hyperlink "manager webapp" and login using the information provided in the deployment manager.
+12. On the webpage that just openned click on the hyperlink "manager webapp" and login using the information provided in the deployment manager
 13. Under the "Deploy" section of the webpage go to the subsection labeled "WAR file to deploy" and click on "Choose File" and choose the WAR file you either created or downloaded and then click "Deploy"
 14. Setup a static IP for your virtual machine by going to the VPC Network page on GCP
 15. Under the "External IP addresses" find the IP address being used by the VM instance containing your Tomcat deployment
@@ -61,13 +61,13 @@ Instructions to create your own deployments of the apps.
 9. Install project dependencies with "pip install -r requirements.txt"
 10. Create the app with "gcloud app create"
 11. Deploy the app with "gcloud app deploy app.yaml --[Project ID]"
-12. The default URL of your app is [Project ID].appspot.com. Or you can use the "gcloud app browse" command to open it.
+12. The default URL of your app is [Project ID].appspot.com. Or you can use the "gcloud app browse" command to open it
 
 ### Python Virtual Machine
 1. Create a new project in Google Cloud Platform
 2. Navigate to the Compute Engine page and create a new VM instance with your preferred options
 3. Connect to the instance via SSH
-4. Set up a firewall. Execute the following commands:
+4. Set up a firewall by  executing the following commands:
 * sudo apt install ufw
 * sudo ufw default allow outgoing
 * sudo ufw default deny incoming
@@ -84,7 +84,7 @@ Instructions to create your own deployments of the apps.
 13. Update nginx config file. Do the following: 
 * sudo rm /etc/nginx/sites-enabled/default
 * sudo nano /etc/nginx/sites-enabled/random_number_generator
-* Copy the contents of RandomNumberFlask/nginx_config.txt into the file. Change [The IP Address of the Server] to your IP.
+* Copy the contents of RandomNumberFlask/nginx_config.txt into the file. Change [The IP Address of the Server] to your IP
 14. Restart nginx server with "sudo systemctl restart nginx"
 15. Find out the number of workers for gunicorn with (2 * number of cores) + 1. Execute "nproc --all" to find number of cores.
 16. Install supervisor with "sudo apt install supervisor"
