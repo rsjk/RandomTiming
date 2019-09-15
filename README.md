@@ -56,18 +56,21 @@ Instructions to create your own deployments of the apps.
 4. Select "Python" as the language and select "Standard" as the environment
 5. Open the Cloud Shell
 6. Clone this repository with the command "git clone https://github.com/Andy-Vu-Viz/RandomNumberGen-Servlets/"
-7. Switch to the PythonRandomNumberAE directory with "cd RandomNumberGen-Servlets/PythonRandomNumberAE/"
-8. Install pip with "sudo apt install python3-pip"
-9. Install project dependencies with "pip install -r requirements.txt"
-10. Create the app with "gcloud app create"
-11. Deploy the app with "gcloud app deploy app.yaml --[Project ID]"
-12. The default URL of your app is [Project ID].appspot.com. Or you can use the "gcloud app browse" command to open it.
+7. Switch to the PythonRandomNumberAE directory with "cd RandomNumberGen-Servlets/RandomNumberPythonAE"
+8. Install a virtual environment. Run the command "virtualenv --python python3 venv"
+9. Activate the virtual environment by running "source venv/bin/activate
+10. Install project dependencies with "pip install -r requirements.txt"
+11. Create the app with "gcloud app create"
+12. Deploy the app with "gcloud app deploy app.yaml --[Project ID]"
+13. The default URL of your app is [Project ID].appspot.com. Or you can use the "gcloud app browse" command to open it.
 
 ### Python Virtual Machine
 1. Create a new project in Google Cloud Platform
-2. Navigate to the Compute Engine page and create a new VM instance with your preferred options
+2. Navigate to the Compute Engine page and create a new VM instance with Ubuntu 18.04 LTS
 3. Connect to the instance via SSH
-4. Set up a firewall. Execute the following commands:
+4. Execute the command "sudo apt update && sudo apt upgrade"
+5. Type "hostname" to find hostname. Edit the host file with "sudo nano /etc/hosts". Under the localhost line, type the IP address of the server, then press tab and type the hostname.
+6. Set up a firewall. Execute the following commands:
 * sudo apt install ufw
 * sudo ufw default allow outgoing
 * sudo ufw default deny incoming
@@ -77,21 +80,23 @@ Instructions to create your own deployments of the apps.
 6. Clone this repository with the command "git clone https://github.com/Andy-Vu-Viz/RandomNumberGen-Servlets/"
 7. Switch to the RandomNumberFlask directory with "cd RandomNumberGen-Servlets/RandomNumberFlask/"
 8. Install pip with "sudo apt install python3-pip"
-9. Install project dependencies with "pip install -r requirements.txt"
+9. Install virtual environment with "sudo apt install python3-venv"
 10. Create virtual environment with "python3 -m venv venv"
 11. Activate the virtual environment with "source venv/bin/activate"
-12. Install nginx with "sudo apt install nginx"
-13. Update nginx config file. Do the following: 
+12. Install project dependencies with "pip install -r requirements.txt"
+13. Install nginx with "sudo apt install nginx"
+14. Install gunicorn with "pip install gunicorn"
+15. Update nginx config file. Do the following: 
 * sudo rm /etc/nginx/sites-enabled/default
 * sudo nano /etc/nginx/sites-enabled/random_number_generator
 * Copy the contents of RandomNumberFlask/nginx_config.txt into the file. Change [The IP Address of the Server] to your IP.
-14. Restart nginx server with "sudo systemctl restart nginx"
-15. Find out the number of workers for gunicorn with (2 * number of cores) + 1. Execute "nproc --all" to find number of cores.
-16. Install supervisor with "sudo apt install supervisor"
-17. Set up supervisor with "sudo nano /etc/supervisor/conf.d/random_number_generator.conf"
-18. Copy the contents of RandomNumberFlask/supervisor_config.txt into the file. Change [Your Username] and [Number of Workers].
-19. Restart supervisor with "sudo supervisorctl reload"
-20. Setup a static IP for your virtual machine by going to the VPC Network page on GCP
-21. Under the "External IP addresses" find the IP address being used by the VM instance containing your Tomcat deployment
-22. Switch "Emphemral" to "Static" and reserve an IP with any name you find appropriate
-23. To access the random number generator navigate to "http://[The IP Address of the Server]"
+16. Restart nginx server with "sudo systemctl restart nginx"
+17. Install supervisor with "sudo apt install supervisor"
+18. Set up supervisor with "sudo nano /etc/supervisor/conf.d/random_number_generator.conf"
+19. Find out the number of workers for gunicorn with (2 * number of cores) + 1. Execute "nproc --all" to find number of cores.
+20. Copy the contents of RandomNumberFlask/supervisor_config.txt into the file. Change [Your Username] and [Number of Workers].
+21. Restart supervisor with "sudo supervisorctl reload"
+22. Setup a static IP for your virtual machine by going to the VPC Network page on GCP
+23. Under the "External IP addresses" find the IP address being used by the VM instance containing your Tomcat deployment
+24. Switch "Emphemral" to "Static" and reserve an IP with any name you find appropriate
+25. To access the random number generator navigate to "http://[The IP Address of the Server]"
