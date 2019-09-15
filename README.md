@@ -1,5 +1,5 @@
 # Random Number Generator GCP Project
-This repository contains the 4 different implementations of the Random Number Generator.
+This repository contains the 4 different implementations of the Random Number Generator. The generators generate a random number between 1 and 1 million.
 * java-appengine-randomnumbergenerator-master is the Java App Engine Implementation. 
 * RandomNumberTomcat-master is the Java Virtual Machine implementation.
 * RandomNumberPythonAE is the Python App Engine Implementation. 
@@ -13,7 +13,7 @@ Our deployments can be found at the following URLs:
 * Python Virtual Machine http://35.193.182.65/
 
 ## Testing
-The testing script is testscript.py. The script accepts the URL of the generator to test as an argument. To run the script, execute "python testscript.py [URL of Generator]". We ran the script for each generator 10 times, generating 1000 numbers each time. The script checks that at least 750 numbers are unique. Our test results are in the TestResults directory. Each test was successful.
+The testing script is testscript.py. The script accepts the URL of the generator to test as an argument. To run the script, execute "python testscript.py [URL of Generator]". We ran the script for each generator 10 times, generating 1000 numbers each time. The script checks that at least 750 numbers are unique in each run. Our test results are in the TestResults directory. Each test was successful.
 
 ## Deployment Instructions
 Instructions to create your own deployments of the apps.
