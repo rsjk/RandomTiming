@@ -59,9 +59,8 @@ Instructions to create your own deployments of the apps
 7. Install project dependencies with "pip install -r requirements.txt"
 8. Run in the Flask development server with "python main.py"
 9. Create the app with "gcloud app create"
-10. Select a region
-11. Deploy the app with "gcloud app deploy app.yaml --project [Project ID]"
-12. The default URL of your app is [Project ID].appspot.com. Or you can use the "gcloud app browse" command to open it
+10. Deploy the app with "gcloud app deploy app.yaml --project [Project ID]"
+11. The default URL of your app is [Project ID].appspot.com. Or you can use the "gcloud app browse" command to open it
 
 ### Python Virtual Machine
 1. Create a new project in Google Cloud Platform
@@ -94,7 +93,7 @@ Instructions to create your own deployments of the apps
 19. Set up supervisor with "sudo nano /etc/supervisor/conf.d/random_number_generator.conf"
 20. Find out the number of workers for gunicorn with (2 * number of cores) + 1 then execute "nproc --all" to find number of cores
 21. Copy the contents of RandomNumberFlask/supervisor_config.txt into the file and change [Your Username] and [Number of Workers]
-22. Make the log files
+22. Make the log files by doing the following:
 * Do "sudo mkdir -p /var/log/random_number_generator"
 * Then "sudo touch /var/log/random_number_generator/random_number_generator.err.log"
 * Then do "sudo touch /var/log/random_number_generator/random_number_generator.out.log"
