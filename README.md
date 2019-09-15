@@ -91,7 +91,7 @@ Instructions to create your own deployments of the apps
 17. Restart nginx server with "sudo systemctl restart nginx"
 18. Install supervisor with "sudo apt install supervisor"
 19. Set up supervisor with "sudo nano /etc/supervisor/conf.d/random_number_generator.conf"
-20. Find out the number of workers for gunicorn with (2 * number of cores) + 1 then execute "nproc --all" to find number of cores
+20. Find out the number of workers for gunicorn with (2 * number of cores) + 1 (execute "nproc --all" to find number of cores)
 21. Copy the contents of RandomNumberFlask/supervisor_config.txt into the file and change [Your Username] and [Number of Workers]
 22. Make the log files by doing the following:
 * Do "sudo mkdir -p /var/log/random_number_generator"
