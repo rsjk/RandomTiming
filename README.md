@@ -61,9 +61,9 @@ Instructions to create your own deployments of the apps.
 9. Activate the virtual environment by running "source venv/bin/activate"
 10. Install project dependencies with "pip install -r requirements.txt"
 11. Run in the Flask development server with "python main.py"
-11. Create the app with "gcloud app create"
-12. Deploy the app with "gcloud app deploy app.yaml --project [Project ID]"
-13. The default URL of your app is [Project ID].appspot.com. Or you can use the "gcloud app browse" command to open it.
+12. Create the app with "gcloud app create"
+13. Deploy the app with "gcloud app deploy app.yaml --project [Project ID]"
+14. The default URL of your app is [Project ID].appspot.com. Or you can use the "gcloud app browse" command to open it.
 
 ### Python Virtual Machine
 1. Create a new project in Google Cloud Platform
@@ -96,8 +96,9 @@ Instructions to create your own deployments of the apps.
 19. Set up supervisor with "sudo nano /etc/supervisor/conf.d/random_number_generator.conf"
 20. Find out the number of workers for gunicorn with (2 * number of cores) + 1. Execute "nproc --all" to find number of cores.
 21. Copy the contents of RandomNumberFlask/supervisor_config.txt into the file. Change [Your Username] and [Number of Workers].
-22. Restart supervisor with "sudo supervisorctl reload"
-23. Setup a static IP for your virtual machine by going to the VPC Network page on GCP
-24. Under the "External IP addresses" find the IP address being used by the VM instance containing your Tomcat deployment
-25. Switch "Emphemral" to "Static" and reserve an IP with any name you find appropriate
-26. To access the random number generator navigate to "http://[The IP Address of the Server]"
+22. Make the log files. Do "sudo mkdir -p /var/log/random_number_generator". Then "sudo touch /var/log/random_number_generator/random_number_generator.err.log". Then do "sudo touch /var/log/random_number_generator/random_number_generator.out.log".
+23. Restart supervisor with "sudo supervisorctl reload"
+24. Setup a static IP for your virtual machine by going to the VPC Network page on GCP
+25. Under the "External IP addresses" find the IP address being used by the VM instance containing your Tomcat deployment
+26. Switch "Emphemral" to "Static" and reserve an IP with any name you find appropriate
+27. To access the random number generator navigate to "http://[The IP Address of the Server]"
