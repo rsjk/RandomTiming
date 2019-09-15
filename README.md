@@ -7,7 +7,7 @@ This repository contains the 4 different implementations of the Random Number Ge
 
 ## Our Deployments
 Our deployments can be found at the following URLs:
-* Java App Engine
+* Java App Engine https://randomnumbergeneratorclean.appspot.com/
 * Java Virtual Machine http://35.209.25.119/Servlets/RandomNumberGen
 * Python App Engine http://python-rand-ae.appspot.com/
 * Python Virtual Machine http://35.193.182.65/
