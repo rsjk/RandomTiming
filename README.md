@@ -59,8 +59,9 @@ Instructions to create your own deployments of the apps
 7. Install project dependencies with "pip install -r requirements.txt"
 8. Run in the Flask development server with "python main.py"
 9. Create the app with "gcloud app create"
-10. Deploy the app with "gcloud app deploy app.yaml --project [Project ID]"
-11. The default URL of your app is [Project ID].appspot.com. Or you can use the "gcloud app browse" command to open it
+10. Select a region
+11. Deploy the app with "gcloud app deploy app.yaml --project [Project ID]"
+12. The default URL of your app is [Project ID].appspot.com. Or you can use the "gcloud app browse" command to open it
 
 ### Python Virtual Machine
 1. Create a new project in Google Cloud Platform
