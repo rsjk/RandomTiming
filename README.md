@@ -67,7 +67,7 @@ Instructions to create your own deployments of the apps
 2. Navigate to the Compute Engine page and create a new VM instance with f1-micro, Ubuntu 18.04 LTS, and enable HTTP and HTTPS traffic
 3. Connect to the instance via SSH
 4. Execute the command "sudo apt update && sudo apt upgrade"
-5. Type "hostname" to find hostname and edit the host file with "sudo nano /etc/hosts", then Under the localhost line, type the IP address of the server, then press tab and type the hostname
+5. Type "hostname" to find hostname and edit the host file with "sudo nano /etc/hosts", then under the localhost line, type the IP address of the server, press tab and type the hostname
 6. Set up a firewall by executing the following commands:
 * sudo apt install ufw
 * sudo ufw default allow outgoing
