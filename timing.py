@@ -4,7 +4,7 @@ import math
 import sys
 import time
 
-# Tests ping of rendom number generators
+# Tests ping of random number generators
 def get_random_numbers(url):
     ping_amount = 10
     avg = 0
@@ -23,8 +23,6 @@ def get_random_numbers(url):
     print(response)
     return response
 
-    
-
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
@@ -38,9 +36,9 @@ if __name__ == "__main__":
                 responses.append(get_random_numbers(url))
         file.close()
         # Log the results
-        logfile = open("test_log.txt","w+")
+        logfile = open("timing_test_log.txt","w+")
         for i in range(len(responses)):
             line = responses[i] + '\n'
             logfile.write(line)
         logfile.close()
-        
+

@@ -1,0 +1,8 @@
+https://randomnumbergeneratorclean.appspot.com/
+      Average latency: 130ms
+http://35.209.25.119/Servlets/RandomNumberGen
+      Average latency: 91ms
+http://python-rand-ae.appspot.com/
+      Average latency: 65ms
+http://35.193.182.65/
+      Average latency: 74ms
