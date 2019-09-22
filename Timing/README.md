@@ -7,6 +7,6 @@ Our first test implementation was the following:
 ![](https://github.com/Andy-Vu-Viz/RandomTiming/blob/master/Timing/screenshots/first_implementation.PNG)
 The loops were removed and code was added to record the time before and after pinging a server. 
 ### Full Implementation
-Our full implementation is the following: ([link to code])(https://github.com/Andy-Vu-Viz/RandomTiming/blob/master/Timing/timing.py)
+Our full implementation is the following: ([link to code](https://github.com/Andy-Vu-Viz/RandomTiming/blob/master/Timing/timing.py))
 ![](https://github.com/Andy-Vu-Viz/RandomTiming/blob/master/Timing/screenshots/full_implementaion.PNG)
 Now the code pings a server a ping_amount of times and averages the times. Results are printing to the command line and written to a file. The script takes a file with the IPs/URLs seperated by new lines as a program argument. To run the script, execute the command "python timing.py [name of file]".
