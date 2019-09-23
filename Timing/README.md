@@ -13,9 +13,9 @@ The loops from the original script were removed, and code was added to record th
 
 ### Final Implementation
 ![](https://github.com/Andy-Vu-Viz/RandomTiming/blob/master/Timing/screenshots/full_implementaion.PNG)
-Now the code pings a server a ping_amount of times and averages the times. Results are printing to the command line and written to a file. The script takes a file with the IPs/URLs seperated by new lines as a program argument. To run the script from the command line, execute the command "python3 timing.py [name of file]".
+Now the script pings a server a ping_amount of times and averages the times. Results are printing to the command line and written to a file. The script takes a file with the IPs/URLs seperated by new lines as a program argument. To run the script from the command line, execute the command "python3 timing.py [name of file]".
 
-### Requirements
+## Requirements
 The following are required to run timing.py:
 * Python 3
 * beautifulsoup4
