@@ -13,7 +13,7 @@ The loops from the original script were removed, and code was added to record th
 
 ### Final Implementation
 ![](https://github.com/rsjk/RandomTiming/blob/master/Timing/screenshots/full_implementaion.PNG)
-Now the script pings a server a ping_amount of times and averages the times. Results are printing to the command line and written to a file. The script takes a file with the IPs/URLs separated by new lines as a program argument. To run the script from the command line, execute the command "python3 timing.py [name of file]". A file with our random number generator IPs/URLs called urls.txt is available to test in the [repository](https://github.com/rsjk/RandomTiming/blob/master/Timing/timing.py).
+Now the script pings a server a ping_amount of times and averages the times. Results are printed to the command line and written to a file "timing_test_log.txt". The script takes a file with the IPs/URLs separated by new lines as a program argument. To run the script from the command line, execute the command "python3 timing.py [name of file]". A file with our random number generator IPs/URLs called urls.txt is available to test in the [repository](https://github.com/rsjk/RandomTiming/blob/master/Timing/timing.py).
 
 ## Requirements
 The following are required to run timing.py:
