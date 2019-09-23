@@ -2,7 +2,7 @@
 We were tasked to create a program that requests a random number from all four of our IP addresses and record the time it takes. The script timing.py can be found in our [repository](https://github.com/rsjk/RandomTiming/blob/master/Timing). In our [Random Number GCP Project](https://github.com/Andy-Vu-Viz/RandomNumberGen-Servlets), we created a python script to test the uniqueness of our random number generators. The script requests 1000 numbers 10 times, and each time it checks that at least 750 are unique. To test the timing of our generators, we decided needed to modify the script to record time rather than test uniqueness.
 
 ## Planning
-We made a PERT chart to plan the steps to make the script. We planned to modify our original script to record times, then create a script that calls the timing script with any number of IPs. Instead of making another script that calls the timing script, we decided to make one script that takes a file with IPs as a program argument.
+We made a [PERT](https://github.com/rsjk/RandomTiming/blob/master/Timing/PERT%20Random%20Timing.pdf) chart to plan the steps to make the script. We planned to modify our original script to record times, then create a script that calls the timing script with any number of IPs. Instead of making another script that calls the timing script, we decided to make one script that takes a file with IPs as a program argument.
 
 ## Implementation
 ### Original Script
