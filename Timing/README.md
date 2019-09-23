@@ -1,5 +1,5 @@
 # Random Number Generator Timing
-We were tasked to create a program that requests a random number from all four of our IP addresses and record the time it takes. The script timing.py can be found [here](https://github.com/rsjk/RandomTiming/Timing). In our [Random Number GCP Project](https://github.com/Andy-Vu-Viz/RandomNumberGen-Servlets), we created a python script to test the uniqueness of our random number generators. The script requests 1000 numbers 10 times, and each time it checks that at least 750 are unique. To test the timing of our generators, we decided needed to modify the script to record time rather than test uniqueness.
+We were tasked to create a program that requests a random number from all four of our IP addresses and record the time it takes. The script timing.py can be found [here](https://github.com/rsjk/RandomTiming/blob/master/Timing/timing.py). In our [Random Number GCP Project](https://github.com/Andy-Vu-Viz/RandomNumberGen-Servlets), we created a python script to test the uniqueness of our random number generators. The script requests 1000 numbers 10 times, and each time it checks that at least 750 are unique. To test the timing of our generators, we decided needed to modify the script to record time rather than test uniqueness.
 
 ## Implementation
 ### Original Script
