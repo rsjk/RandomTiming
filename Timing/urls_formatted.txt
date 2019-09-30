@@ -1,0 +1,8 @@
+us-central1_a_app_Python@python-rand-ae.appspot.com/
+us-central1_a_VM_Python@35.193.182.65/
+us-central1_a_app_Java@randomnumbergeneratorclean.appspot.com/
+us-central1_a_VM_Java@35.209.25.119/Servlets/RandomNumberGen
+europe-west3_a_app_Python@python-ae-test.appspot.com/
+europe-west3_a_VM_Python@35.242.194.148/
+europe-west3_a_app_Java@glassy-droplet-254017.appspot.com
+europe-west3_a_VM_Java@35.198.133.185/Servlets/RandomNumberGen
