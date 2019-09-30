@@ -8,13 +8,15 @@ import time
 def get_random_numbers(url, line):
     ping_amount = 10
     avg = 0
+    response = "from_ip_address:" + line.rstrip('\n') + " "
     for i in range(ping_amount):
         start = time.time()
         try:
             webpage = urllib.request.urlopen(url)
         except urllib.error.URLError as e:
-            print(e.reason)
-            return str(e.reason)
+            response += str(e.reason)
+            print(response)
+            return response
         loading_page = webpage.read()
         end = time.time()
         webpage.close()
@@ -23,7 +25,7 @@ def get_random_numbers(url, line):
     # Average out the pings and convert to milliseconds
     avg = (avg / ping_amount)*1000
     # return the time to ping
-    response = "from_ip_address:" + line.rstrip('\n') + " " + str(math.ceil(avg))+ "ms"
+    response += str(math.ceil(avg))+ "ms"
     print(response)
     return response
 
