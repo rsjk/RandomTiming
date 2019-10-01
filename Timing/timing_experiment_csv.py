@@ -8,13 +8,13 @@ import time
 def get_random_numbers(url, line):
     ping_amount = 10
     avg = 0
-    response = "from_ip_address:" + line.rstrip('\n') + " "
+    response = ""
     for i in range(ping_amount):
         start = time.time()
         try:
             webpage = urllib.request.urlopen(url)
         except urllib.error.URLError as e:
-            response += str(e.reason)
+            response = str(e.reason)
             print(response)
             return response
         loading_page = webpage.read()
