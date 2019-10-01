@@ -1,103 +1,114 @@
 info,url,latency(ms)
-europe-west3_a_app_Python,https://python-ae-test.appspot.com/,524ms
-europe-west3_a_VM_Python,http://35.242.194.148/,283ms
-europe-west3_a_app_Java,https://glassy-droplet-254017.appspot.com,470ms
-europe-west3_a_VM_Java,http://35.198.133.185/Servlets/RandomNumberGen,371ms
-us-east1_b_VM_Python,http://35.237.232.176,121ms
-us-east1_b_VM_Java,http://35.196.181.146:8080/randnum/hello,153ms
-asia-northeast1_a_app_Python,http://regions-254017.appspot.com/,291ms
-asia-northeast1_a_VM_Python,http://34.84.95.192,425ms
-asia-south1_c_AppEngine_Python,https://timing-experiment-cs4263.appspot.com/,1376ms
-asia-northeast1_a_app_Java,https://glass-pen-254017.appspot.com,90ms
-asia-south-1_a_VM_Java,http://34.93.76.51:8080/rng/,706ms
-asia-northeast1_b_VM_Java,http://34.85.71.249:8080/random/hello.jsp,374ms
-australia-southeast1_b_vm_java,http://35.189.39.14/randnum/randnum,490ms
-australia-southeast1_b_vm_python,http://35.189.43.96:5000,from_ip_address:australia-southeast1_b_vm_python@35.189.43.96:5000 [WinError 10061] No connection could be made because the target machine actively refused it
-australia-southeast1_b_app_java,http://galvanic-ward-254017.appspot.com,1172ms
-australia-southeast1_b_app_python,http://python-aus.appspot.com/,1275ms
-asia-south1_c_app_java,http://team-23-asia-southeast.appspot.com/,72ms
-asia-southeast1_b_VM_Python,http://34.87.23.44:5000/,from_ip_address:asia-southeast1_b_VM_Python@http://34.87.23.44:5000/ [WinError 10061] No connection could be made because the target machine actively refused it
-asia-northeast2_a_VM_Java,http://34.97.51.216:8080/number.jsp,309ms
-europe-north1_c_VM_Python,http://35.228.86.47:5000/,414ms
-asia-northeast2_a_app_Python,http://rng-python-asiane2.appspot.com,from_ip_address:asia-northeast2_a_app_Python@http://rng-python-asiane2.appspot.com Bad Gateway
-asia_east2_c_VM_Python,http://35.220.136.215/,452ms
-asia-southeast1_a_VM_Python,http://34.87.17.67/python/,477ms
-asia-southeast1_a_VM_Java,http://34.87.17.67/java/RandGen.shtml,996ms
-asia-south1_c_app_Java,http://region-change.appspot.com/demo,322ms
-southeast-australia-1_c_app_Python,https://cs-4263-1.appspot.com/,1306ms
+europe-west3_a_app_Python,https://python-ae-test.appspot.com/,588ms
+europe-west3_a_VM_Python,http://35.242.194.148/,362ms
+europe-west3_a_app_Java,https://glassy-droplet-254017.appspot.com,656ms
+europe-west3_a_VM_Java,http://35.198.133.185/Servlets/RandomNumberGen,385ms
+us-east1_b_VM_Python,http://35.237.232.176,158ms
+us-east1_b_VM_Java,http://35.196.181.146:8080/randnum/hello,124ms
+asia-northeast1_a_app_Python,http://regions-254017.appspot.com/,471ms
+asia-northeast1_a_VM_Python,http://34.84.95.192,304ms
+asia-south1_c_AppEngine_Python,https://timing-experiment-cs4263.appspot.com/,640ms
+asia-northeast1_a_app_Java,https://glass-pen-254017.appspot.com,166ms
+asia-south-1_a_VM_Java,http://34.93.76.51:8080/rng/,547ms
+asia-northeast1_b_VM_Java,http://34.85.71.249:8080/random/hello.jsp,301ms
+australia-southeast1_b_vm_java,http://35.189.39.14/randnum/randnum,499ms
+australia-southeast1_b_vm_python,http://35.189.43.96:5000,[WinError 10061] No connection could be made because the target machine actively refused it
+australia-southeast1_b_app_java,http://galvanic-ward-254017.appspot.com,1176ms
+australia-southeast1_b_app_python,http://python-aus.appspot.com/,1277ms
+asia-south1_c_app_java,http://team-23-asia-southeast.appspot.com/,77ms
+asia-southeast1_b_VM_Python,http://34.87.23.44:5000/,[WinError 10061] No connection could be made because the target machine actively refused it
+asia-northeast2_a_VM_Java,http://34.97.51.216:8080/number.jsp,316ms
+europe-north1_c_VM_Python,http://35.228.86.47:5000/,336ms
+asia-northeast2_a_app_Python,http://rng-python-asiane2.appspot.com,Bad Gateway
+asia_east2_c_VM_Python,http://35.220.136.215/,385ms
+asia-southeast1_a_VM_Python,http://34.87.17.67/python/,488ms
+asia-southeast1_a_VM_Java,http://34.87.17.67/java/RandGen.shtml,1149ms
+asia-south1_c_app_Java,http://region-change.appspot.com/demo,327ms
+southeast-australia-1_c_app_Python,https://cs-4263-1.appspot.com/,1211ms
 asia-northeast2_a_VM_Python,http://34.97.25.195,314ms
-asia_east2_app_Python,https://cs4263-rngtiming.appspot.com/,1044ms
-asia_east2_app_Java,https://javaproject1-254017.appspot.com/,194ms
-asia_east2_VM_Python,http://35.220.136.215/,381ms
-southamerica-east1_a_app_Python,https://timing-experiment-sa-zonea.appspot.com/,993ms
-southamerica-east1_a_app_Java,https://timing-experiment-sa-java.appspot.com/demo,246ms
-europe-west3_b_app_python,http://radom-timing-experiment.appspot.com,439ms
-europe-west3_b_app_java,http://java-dot-radom-timing-experiment.appspot.com,292ms
-europe-west3_b_VM_Java,http://35.246.243.145,286ms
-europe-west3_b_VM_Python,http://35.234.125.152,279ms
-europe-west6_a_VM_Java_,http://34.65.30.164,from_ip_address:europe-west6_a_VM_Java_@34.65.30.164 [WinError 10061] No connection could be made because the target machine actively refused it
-southamerica-east1_a_VM_Python,http://34.95.171.137/,394ms
-europe-west4_a_VM_Python,http://35.204.2.146/,340ms
-asia-south1_a_VM_Python,http://34.93.13.81:8000/,548ms
-europe-west2_a_VM_Java,http://35.242.148.119/javarng,326ms
-europe-west2_a_VM_Python,http://35.242.148.119/pythonrng,260ms
-europe-west2_a_app_Java,https://javarng-dot-universal-helix-254016.appspot.com/,474ms
-europe-west2_a_app_Python,https://pythonrng-dot-universal-helix-254016.appspot.com/,586ms
+asia_east2_app_Python,https://cs4263-rngtiming.appspot.com/,1241ms
+asia_east2_app_Java,https://javaproject1-254017.appspot.com/,98ms
+asia_east2_VM_Python,http://35.220.136.215/,385ms
+southamerica-east1_a_app_Python,https://timing-experiment-sa-zonea.appspot.com/,912ms
+southamerica-east1_a_app_Java,https://timing-experiment-sa-java.appspot.com/demo,333ms
+europe-west3_b_app_python,http://radom-timing-experiment.appspot.com,268ms
+europe-west3_b_app_java,http://java-dot-radom-timing-experiment.appspot.com,335ms
+europe-west3_b_VM_Java,http://35.246.243.145,408ms
+europe-west3_b_VM_Python,http://35.234.125.152,290ms
+europe-west6_a_VM_Java_,http://34.65.30.164,[WinError 10061] No connection could be made because the target machine actively refused it
+southamerica-east1_a_VM_Python,http://34.95.171.137/,479ms
+europe-west4_a_VM_Python,http://35.204.2.146/,284ms
+asia-south1_a_VM_Python,http://34.93.13.81:8000/,549ms
+europe-west2_a_VM_Java,http://35.242.148.119/javarng,458ms
+europe-west2_a_VM_Python,http://35.242.148.119/pythonrng,264ms
+europe-west2_a_app_Java,https://javarng-dot-universal-helix-254016.appspot.com/,537ms
+europe-west2_a_app_Python,https://pythonrng-dot-universal-helix-254016.appspot.com/,318ms
 us-central1_a_app_Python,https://agile-genius-254017.appspot.com,105ms
-us-central1_a_app_Java,http://random-num-generator-java.appspot.com/,170ms
-us-central1_a_VM_Python,http://34.67.208.90:5000,117ms
-us-central1_a_VM_Java,http://35.232.76.156:8080/randomnum/rnd.jsp,82ms
-us-west1_a_VM_Python,http://35.197.97.54/Project,124ms
-us-east4_a_VM_Java_,http://35.245.249.223:8080/javaapp-1.0-SNAPSHOT/,112ms
-us-east4_app_Java_,https://java-east.appspot.com/,239ms
-us-east4_a_VM_Python_,http://35.236.251.120:5000/,189ms
-us-east4_app_Python_,https://distributed-inn-254017.appspot.com/,238ms
-europe-west2_b_VM_Python,http://34.89.105.129/,329ms
-us-central_c_app_Java,http://software-engineering-4263.appspot.com/randomnumber,128ms
-europe-west3_c_app_Python,https://xenon-blade-254017.appspot.com/,338ms
-asia-east1_b_VM_Python,https://eastasia.mag-i-c.com/,538ms
-asia-east1_b_VM_Java,http://eastasiajava.mag-i-c.com/,360ms
-asia-east2_*_app_Python,https://adept-storm-254017.appspot.com/,957ms
-asia-east2_*_app_Java,https://timing-experiment-2.appspot.com/,1173ms
-europe-west6_a_VM_Java,http://34.65.233.205:8080/Rng/giveme,302ms
-europe-west6_a_app_Java,https://20190925t131126-dot-green-network-254018.appspot.com/rnd,823ms
-asia-south1_a_app_Java,https://javaappexperiment.appspot.com,1819ms
-asia-south-1_a_app_Python,https://graphite-hook-254021.appspot.com/,347ms
-us-west2_us-west2-a_VM_Python,http://35.236.38.77/vm/python.py,139ms
-us-west2_us-west2-a_VM_Java,http://35.236.38.77/vm/java.sh,457ms
-us-west2_us-west2-a_app_Python,https://pyapp-254017.appspot.com/,283ms
-us-west2_us-west2-a_app_Java,https://javaapp-3298719.appspot.com/,341ms
-europe-west6_a_VM_Python,http://34.65.60.226,1029ms
-europe-north1_a_app_Java,https://timing-experiment-254017.appspot.com/,86ms
-europe-west6_a_app_Python,http://vivid-memento-254504.appspot.com,860ms
-us-west1_a_app_Python,http://ip-timing.appspot.com/,127ms
-europe-west1_b_app_Python,http://timing-experiment.appspot.com/,666ms
-europe-west1_b_app_Java,http://random-timing.appspot.com,464ms
-europe-west1_b_vm_Java,http://35.195.133.24:8000,322ms
-europe-west1_b_vm_Python,http://35.195.133.24:8080,270ms
-asia-south1_b_app_Python,https://melodic-lantern252322.appspot.com/,from_ip_address:asia-south1_b_app_Python@https://melodic-lantern252322.appspot.com/ Not Found
-asia-south1_b_VM_Python,https://python-compute252322.appspot.com/,from_ip_address:asia-south1_b_VM_Python@https://python-compute252322.appspot.com/ Not Found
-asia-south1_b_app_Java,https://random-number-generator-251217.appspot.com/,108ms
-asia-south1_b_VM_Java,http://35.239.94.178:8080/,112ms
-europe-north1_b_VM_Java,http://35.228.170.187/,419ms
-europe-west2_c_app_Python,http://voltaic-azimuth-254421.appspot.com/,523ms
-northamerica-northeast1_a_app_Python,https://a-project-made-of-time.appspot.com/,287ms
-europe-west6_a_app_Python,https://project1-2-254017.appspot.com/,779ms
-us-east1_b_app_Python,https://pythonae-east.appspot.com/,336ms
-us-east1-b-app-Java,http://airy-web-254017.appspot.com/demo,203ms
-europe-west2_b_app_Python,https://python-app-new-server.appspot.com/,847ms
-europe-west2_b_app_Java,http://35.246.72.72:8080/javarand/MyServlet,332ms
-europe-west2_b_app_Java,http://35.246.72.72:8080/javarand/MyServlet,259ms
-US-Central-1_a_VM_Python,http://35.225.166.187/ ,75ms
-australia-southeast1_a_VM_Python,http://35.244.66.146:5000,459ms
-australia-southeast1_a_app_Python,http://timing-experiment-flask.appspot.com/,1204ms
-australia-southeast1_a_app_Java,http://randomnumzonea.appspot.com/,214ms
-australia-southeast1_a_VM_Java,http://35.244.66.146:9999/randomNumber/randNum,493ms
-asia-northeast-1_b_VM_Java,http://35.221.85.9:8080/rng/,527ms
-asia-northeast-1_b_VM_Python,http://http://35.221.85.9/,from_ip_address:asia-northeast-1_b_VM_Python@http://http://35.221.85.9/ [Errno 11001] getaddrinfo failed
-europe-west_c_app_Java,https://t0925-254018.appspot.com,150ms
-europe-west3_c_app_java,https://randomtiming.appspot.com/,93ms
-europe-north1-a_VM_Python,http://35.228.182.58:8000/randomNumber/,399ms
+us-central1_a_app_Java,http://random-num-generator-java.appspot.com/,80ms
+us-central1_a_VM_Python,http://34.67.208.90:5000,86ms
+us-central1_a_VM_Java,http://35.232.76.156:8080/randomnum/rnd.jsp,85ms
+us-west1_a_VM_Python,http://35.197.97.54/Project,151ms
+us-east4_a_VM_Java_,http://35.245.249.223:8080/javaapp-1.0-SNAPSHOT/,118ms
+us-east4_app_Java_,https://java-east.appspot.com/,265ms
+us-east4_a_VM_Python_,http://35.236.251.120:5000/,224ms
+us-east4_app_Python_,https://distributed-inn-254017.appspot.com/,236ms
+europe-west2_b_VM_Python,http://34.89.105.129/,264ms
+us-central_c_app_Java,http://software-engineering-4263.appspot.com/randomnumber,125ms
+europe-west3_c_app_Python,https://xenon-blade-254017.appspot.com/,722ms
+asia-east1_b_VM_Python,https://eastasia.mag-i-c.com/,540ms
+asia-east1_b_VM_Java,http://eastasiajava.mag-i-c.com/,359ms
+asia-east2_*_app_Python,https://adept-storm-254017.appspot.com/,1247ms
+asia-east2_*_app_Java,https://timing-experiment-2.appspot.com/,1149ms
+europe-west6_a_VM_Java,http://34.65.233.205:8080/Rng/giveme,303ms
+europe-west6_a_app_Java,https://20190925t131126-dot-green-network-254018.appspot.com/rnd,896ms
+asia-south1_a_app_Java,https://javaappexperiment.appspot.com,1523ms
+asia-south-1_a_app_Python,https://graphite-hook-254021.appspot.com/,356ms
+us-west2_us-west2-a_VM_Python,http://35.236.38.77/vm/python.py,149ms
+us-west2_us-west2-a_VM_Java,http://35.236.38.77/vm/java.sh,424ms
+us-west2_us-west2-a_app_Python,https://pyapp-254017.appspot.com/,241ms
+us-west2_us-west2-a_app_Java,https://javaapp-3298719.appspot.com/,336ms
+europe-west6_a_VM_Python,http://34.65.60.226,687ms
+europe-north1_a_app_Java,https://timing-experiment-254017.appspot.com/,90ms
+europe-west6_a_app_Python,http://vivid-memento-254504.appspot.com,793ms
+us-west1_a_app_Python,http://ip-timing.appspot.com/,140ms
+europe-west1_b_app_Python,http://timing-experiment.appspot.com/,539ms
+europe-west1_b_app_Java,http://random-timing.appspot.com,467ms
+europe-west1_b_vm_Java,http://35.195.133.24:8000,275ms
+europe-west1_b_vm_Python,http://35.195.133.24:8080,354ms
+asia-south1_b_app_Python,https://melodic-lantern252322.appspot.com/,Not Found
+asia-south1_b_VM_Python,https://python-compute252322.appspot.com/,Not Found
+asia-south1_b_app_Java,https://random-number-generator-251217.appspot.com/,111ms
+asia-south1_b_VM_Java,http://35.239.94.178:8080/,86ms
+europe-north1_b_VM_Java,http://35.228.170.187/,424ms
+europe-west2_c_app_Python,http://voltaic-azimuth-254421.appspot.com/,374ms
+northamerica-northeast1_a_app_Python,https://a-project-made-of-time.appspot.com/,274ms
+europe-west6_a_app_Python,https://project1-2-254017.appspot.com/,907ms
+us-east1_b_app_Python,https://pythonae-east.appspot.com/,315ms
+us-east1-b-app-Java,http://airy-web-254017.appspot.com/demo,137ms
+europe-west2_b_app_Python,https://python-app-new-server.appspot.com/,706ms
+europe-west2_b_app_Java,http://35.246.72.72:8080/javarand/MyServlet,264ms
+europe-west2_b_app_Java,http://35.246.72.72:8080/javarand/MyServlet,262ms
+US-Central-1_a_VM_Python,http://35.225.166.187/ ,86ms
+australia-southeast1_a_VM_Python,http://35.244.66.146:5000,383ms
+australia-southeast1_a_app_Python,http://timing-experiment-flask.appspot.com/,1284ms
+australia-southeast1_a_app_Java,http://randomnumzonea.appspot.com/,180ms
+australia-southeast1_a_VM_Java,http://35.244.66.146:9999/randomNumber/randNum,380ms
+asia-northeast-1_b_VM_Java,http://35.221.85.9:8080/rng/,456ms
+asia-northeast-1_b_VM_Python,http://http://35.221.85.9/,[Errno 11001] getaddrinfo failed
+europe-west_c_app_Java,https://t0925-254018.appspot.com,92ms
+europe-west3_c_app_java,https://randomtiming.appspot.com/,96ms
+europe-north1-a_VM_Python,http://35.228.182.58:8000/randomNumber/,339ms
 asia-northeast2_a_app_Java,https://number-254315.appspot.com/hello,108ms
-eurpoe-west1_app_Java ,https://composed-anvil-254017.appspot.com/demo,267ms
-europe-west1_app_Python ,https://cs4263-test.appspot.com,560ms
+eurpoe-west1_app_Java ,https://composed-anvil-254017.appspot.com/demo,259ms
+europe-west1_app_Python ,https://cs4263-test.appspot.com,383ms
+europe-west1_VM_Java,http://34.77.239.200:5000/,271ms
+europe-west1_VM_Python,http://35.238.165.97:5000/,87ms
+asia-south2_a_app_Java,https://randn-254517.appspot.com/hello,960ms
+europe-north1_a_VM_Java,http://35.228.200.95/examples/servlets/servlet/HelloWorldExample,335ms
+asia-northeast2_a_app_Java,https://number-254315.appspot.com/hello,104ms
+asia-east2_a_VM_Java,http://34.92.91.211:8080/random-gcp/random.jsp,499ms
+asia-east2_a_app_Java,http://software-engineering-i-2.appspot.com/demo,1125ms
+asia-east2_a_VM_Python,http://35.220.139.138:5000/,384ms
+asia-east2_a_app_Python,http://experimentproject-254019.appspot.com/,615ms
+asia-east2_a_app_Python,https://asian-four-men-one-shell.appspot.com,1034ms
+asia-east2_a_VM_Python,http://www.qazwsxedc.gq/,389ms
